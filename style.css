@@ -1,0 +1,187 @@
+:root {
+    --neutral-100: #f8f8f8;
+    --neutral-200: #c6c6c6;
+    --neutral-300: #959595; /*NEUTRAL COLORS*/
+    --neutral-400: #636363;
+    --neutral-500: #323232;
+  
+    --primary-100: #efdfd0;
+    --primary-200: #e1c3a6;
+    --primary-300: #c48a53;
+    --primary-400: #7d522b; /*PRIMARY COLORS*/
+    --primary-500: #53371c;
+    --primary-600: #2a1b0e;
+  
+    --secondary-50: #a4e0e5;
+    --secondary-100: #309fa9;
+    --secondary-200: #267f87;
+    --secondary-300: #1d5f65; /*SECONDARY COLORS*/
+    --secondary-400: #134044;
+    --secondary-500: #0a2022;
+  
+    --alternative-100: #1b4f79; /*ALTERNATIVE COLOR*/
+  
+    --caramel-100: #a3734f; /*CARAMEL COLOR*/
+  
+    --action-400: #a10a15; /*ACTION COLOR*/
+  
+    --opacity-70: #efdfd0b3;
+    --opacity-50: #f8f8f880; /*OPACITY SHADES*/
+    --opacity-30: #f8f8f84d;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0%;
+  }
+  
+  .main-content {
+    position: absolute;
+    width: 100%;
+  }
+  
+  /*HOME BANNER*/
+  .main-banner {
+    background: var(--primary-100);
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+  }
+  
+  .banner-text,
+  .progress-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .banner-text h1 {
+    color: var(--caramel-100);
+    font-size: 2.75rem;
+    text-align: center;
+  }
+  
+  .banner-text h4 {
+    font-size: 1.75rem;
+    color: var(--secondary-100);
+  }
+  
+  .banner-text h4 span {
+    letter-spacing: 5px;
+  }
+  
+  .banner-img {
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*PROGRESS SECTION*/
+  .progress-section {
+    background: var(--primary-200);
+    height: 120vh;
+  }
+  
+  .progress-text h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    color: var(--primary-600);
+    margin: 4px;
+  }
+  
+  .progress-text h4 {
+    font-size: 1.5rem;
+    color: var(--neutral-100);
+    padding: 8px;
+  }
+  
+  .progress-column,
+  .progress-img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+  
+  .progress-column p {
+    color: var(--primary-500);
+    max-width: 180px;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  
+  .progress-img h3 {
+    text-align: center;
+  }
+  
+  .doubleFlavor-section {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+  }
+  
+  .classic-flavor,
+  .exquisit-flavor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 10px 0;
+  }
+  
+  .classic-flavor h2,
+  .exquisit-flavor h2 {
+    text-align: center;
+    color: var(--primary-600);
+    font-size: 2.75rem;
+    line-height: 54px;
+    display: block;
+  }
+  
+  .classic-flavor p,
+  .exquisit-flavor p {
+    margin: 0 12px;
+    color: var(--primary-600);
+    font-size: 1.25rem;
+    line-height: 36px;
+  }
+  
+  .content-text {
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.8s ease-in;
+  }
+  
+  .content-text.visible {
+    max-height: max-content;
+  }
+  
+  .classic-flavor p span,
+  .exquisit-flavor p span {
+    color: var(--secondary-100);
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  .flavor-beneficts {
+    width: 100%;
+  }
+  
+  .flavor-beneficts li {
+    list-style: none;
+    background: var(--opacity-50);
+    margin: 10px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    padding: 12px;
+    color: var(--primary-600);
+  }
+  
+  .delivery-section {
+    height: 100vh;
+    background: var(--primary-200);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+  
